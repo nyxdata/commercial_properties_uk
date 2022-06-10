@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato"}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #093E68;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+
+.sidenav a {
+  padding: 20px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  display: block;
+  font-family: "Lato"
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  margin-top: 80px; /* Same as the height of the horizontalbar */
+  font-size: 14px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.horizontalbar {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #093E68;
+  overflow-x: hidden;
+}
+
+.horizontalbar a {
+  padding: 10px 0px 0px 160px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #FFFFFF;
+  display: block;
+  font-family: "Lato"
+}
+
+#text span {
+  display:none;
+}
+#text span:target {
+  display:block;
+}
+</style>
+<script>
+function get_title(obj) {
+	var t = obj.innerText;
+	document.getElementById('view').innerHTML = t + ' View';
+}
+
+</script>
+</head>
+<body>
+<div class="horizontalbar">
+  <a>Commercial Real Estate Directory | United Kingdom</a>
+  <a id="view">Properties View</a>
+</div>
+
+
+<div class="sidenav"> 
+  <a href="https://baserow.io/public/grid/xGpVfiKfSApWcVEFdBuye_NcQfu09A3Y_T22SSWq_7k" target="baserow_embed" onclick="get_title(this)">Properties</a>
+  <a href="https://baserow.io/public/grid/hhjqk37_hXET-sY1BK3Y6WstF6iSVV7A79F3t3VdgJA" target="baserow_embed" onclick="get_title(this)">Companies</a>
+  <a href="https://baserow.io/public/grid/UVub8YVxwE8nI2qgdoOYu_tBEjhp4bN3NQk_Jp-L7sk" target="baserow_embed" onclick="get_title(this)">Contacts</a>
+  <a href="https://baserow.io/public/grid/q-ejwEf5xfxBbFiaZBtPI-xw-C-ufRRiXJBeJ4DTWFY" target="baserow_embed" onclick="get_title(this)">Retailers</a>
+</div>
+
+<div class="main">
+<iframe name="baserow_embed"
+	lang="en"
+	src="https://baserow.io/public/grid/q-ejwEf5xfxBbFiaZBtPI-xw-C-ufRRiXJBeJ4DTWFY"
+	frameborder="0"
+	scrolling="no"
+	style="overflow:hidden;width:100%"
+	height="460"
+	width="100%">></iframe>
+
+</div>
+   
+</body>
+</html> 
+
+	
+	
