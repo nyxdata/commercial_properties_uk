@@ -10,10 +10,10 @@ body {
   height: 100%;
   width: 160px;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   left: 0;
-  background-color: #093E68;
+  background-color: #211E32;
   overflow-x: hidden;
   padding-top: 80px;
 }
@@ -47,10 +47,10 @@ body {
   height: 80px;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   left: 0;
-  background-color: #093E68;
+  background-color: #211E32;
   overflow-x: hidden;
 }
 
@@ -62,6 +62,25 @@ body {
   display: block;
   font-family: "Lato"
 }
+
+.logo {
+  height: 80px;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #211E32;
+  overflow-x: hidden;
+}
+
+.Image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  padding: 5px 5px 5px 5px;
+}
+
 
 #text span {
   display:none;
@@ -79,31 +98,36 @@ function get_title(obj) {
 </script>
 </head>
 <body>
+
+<div class="logo">
+<a href="http://www.nyxbyte.com">
+<img class="Image" src="https://softr-prod.imgix.net/applications/910d5e3a-8731-409a-a0a9-abfb43c80cf8/assets/80811d48-7c71-49be-8138-bf72d4d84ff7.png" alt="alternatetext">
+</a>
+</div>
+
 <div class="horizontalbar">
   <a>Commercial Real Estate Directory | United Kingdom</a>
   <a id="view">Properties View</a>
 </div>
 
 
-<div class="sidenav"> 
-  <a href="https://baserow.io/public/grid/xGpVfiKfSApWcVEFdBuye_NcQfu09A3Y_T22SSWq_7k" target="baserow_embed" onclick="get_title(this)">Properties</a>
-  <a href="https://baserow.io/public/grid/hhjqk37_hXET-sY1BK3Y6WstF6iSVV7A79F3t3VdgJA" target="baserow_embed" onclick="get_title(this)">Companies</a>
-  <a href="https://baserow.io/public/grid/UVub8YVxwE8nI2qgdoOYu_tBEjhp4bN3NQk_Jp-L7sk" target="baserow_embed" onclick="get_title(this)">Contacts</a>
-  <a href="https://baserow.io/public/grid/q-ejwEf5xfxBbFiaZBtPI-xw-C-ufRRiXJBeJ4DTWFY" target="baserow_embed" onclick="get_title(this)">Retailers</a>
+
+<div class="sidenav">
+	<a href="https://baserow.io/public/grid/xGpVfiKfSApWcVEFdBuye_NcQfu09A3Y_T22SSWq_7k" target="baserow_embed" onclick="get_title(this)">Properties</a>
+	<a href="https://baserow.io/public/grid/hhjqk37_hXET-sY1BK3Y6WstF6iSVV7A79F3t3VdgJA" target="baserow_embed" onclick="get_title(this)">Companies</a>
+	<a href="https://baserow.io/public/grid/UVub8YVxwE8nI2qgdoOYu_tBEjhp4bN3NQk_Jp-L7sk" target="baserow_embed" onclick="get_title(this)">Contacts</a>
+	<a href="https://baserow.io/public/grid/q-ejwEf5xfxBbFiaZBtPI-xw-C-ufRRiXJBeJ4DTWFY" target="baserow_embed" onclick="get_title(this)">Retailers</a>
 </div>
 
 <div class="main">
 <iframe name="baserow_embed"
 	lang="en"
-	src="https://baserow.io/public/grid/q-ejwEf5xfxBbFiaZBtPI-xw-C-ufRRiXJBeJ4DTWFY"
+	src="https://baserow.io/public/grid/xGpVfiKfSApWcVEFdBuye_NcQfu09A3Y_T22SSWq_7k"
 	frameborder="0"
 	scrolling="no"
-	style="overflow:hidden;width:100%"
-	height="460"
-	width="100%">></iframe>
+	style="overflow: hidden; height: 85%;width: 100%; position: absolute;">></iframe>
 
 </div>
-   
 </body>
 </html> 
 
